@@ -1,0 +1,223 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-primaary{
+  color: #F15A29;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  /* height: 200vh; */
+  overflow-x: hidden;
+}
+
+
+
+.li:hover>ul{
+  visibility: visible;
+  opacity: 1;
+  top: 50px;
+  transition: all .3s;
+  z-index: 0;
+  transform: rotateX(0deg);
+}
+.li>ul{
+  visibility: hidden;
+  transform: rotateX(90deg);
+}
+
+.li:hover>a>i{
+  transform:  rotate(-180deg) scale(0.75);
+  /* transition: all .3s; */
+}
+
+
+.menu-small{
+  transition: all .5s;
+}
+
+
+
+
+/* rain  */
+
+.background {
+  width: 100vw;
+  /* height: 100vh; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(1,1);
+  transition: transform 1.5s;
+}
+
+.mountain {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+}
+
+.mountain.mountain-1 {
+  bottom: -1rem;
+  left: 0;
+  filter: blur(2px) brightness(0.3);
+  z-index: 0;
+}
+
+.mountain.mountain-2 {
+  bottom: 5rem;
+  left: 0;
+  transform: scaleX(-1);
+  filter: blur(3px) brightness(0.3);
+  /* opacity: 0.5; */
+  z-index: 0;
+}
+
+.mountain.mountain-3 {
+  height: 70%;
+width:50%;
+  bottom: 10rem;
+  right: 0;
+  filter: blur(5px);
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.mountain.mountain-4 {
+  height: 70%;
+  bottom: 8rem;
+width:50%;
+  left: 0;
+  filter: blur(5px);
+  transform: scaleX(-1);
+  opacity: 0.3;
+  z-index: 0;
+}
+
+
+/* rain */
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.thunder {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+  /* background-color: black; */
+}
+
+.thunder:after {
+  content: "";
+  width: 100%;
+  height: 100;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to top, rgba(29, 26, 26, 0.663), rgba(34, 33, 33, 0.2));
+  z-index: 1;
+  -webkit-animation: thunder-bg 6s infinite;
+  animation: thunder-bg 6s infinite;
+}
+
+canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#canvas3 {
+  /* filter: blur(2px); */
+  z-index: 0;
+  /* display: none; */
+  animation: thunder-position 10s infinite alternate-reverse linear;
+}
+
+#canvas2 {
+  z-index: 0;
+}
+
+
+#canvas1 {
+  filter: blur(0.7px);
+  z-index: 0;
+}
+
+
+@keyframes thunder-position {
+  from {
+      filter: blur(5px);
+      z-index: 1;
+      opacity: 0.5;
+  }
+
+  to {
+      opacity: 1;
+      filter: blur(0px);
+      z-index: 3;
+  }
+}
+
+
+nav{
+  z-index: 10000000000000000000 !important;
+}
+
+
+.mobile-app-child{
+  transform: scale(0);
+}
+
+
+.mobile-app:hover>.mobile-app-child{
+  transform: scale(1);
+  transition: all .5s;
+}
+
+
+.bg-process {
+  margin-top: 4rem;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.672),
+    rgba(0, 0, 0, 0.672),
+    rgba(0, 0, 0, 0.672)
+  ), url('../public/img/porcess-bg.jpg');
+  background-attachment: fixed;
+}
+
+
+
+.border-mini{
+  border: .5px solid #858585;
+}
+
+
+
+.border-mini:hover{
+  background-color: #F15A29;
+}
+
+
+.quote-bg{
+  background-image: url('../public/img/stats/download.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+
+.bradcamp-keyboard {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.887), rgba(0, 0, 0, 0.828)), url('../public/img/keyboard.jpg');
+  background-size: cover;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
