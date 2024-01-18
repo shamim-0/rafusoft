@@ -1,16 +1,21 @@
 import Image from 'next/image'
 import rafusoftreview from '../public/img/stats/rafusoft-review.svg'
 import Link from 'next/link'
+import FacebookIcon from '@mui/icons-material/Facebook';
+import XIcon from '@mui/icons-material/X';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export default function Footer(){
   return(
     <div className="bg-[#1F1F1F] pt-10 pb-3 px-5">
         <div className="text-center flex justify-center items-center gap-4">
-          <a className="bg-[#7e7a7a]  h-10 w-10 flex justify-center items-center rounded-full p-2" href="https://www.facebook.com/rafusoft"><i class="fa-brands fa-facebook-f text-white scale-100  rounded-full"></i></a>
-          <a className="bg-[#7e7a7a]  h-10 w-10 flex justify-center items-center rounded-full p-2" href="https://twitter.com/rafusoft"><i class="fa-brands fa-x-twitter text-white scale-100  rounded-full"></i></a>
-          <a className="bg-[#7e7a7a]  h-10 w-10 flex justify-center items-center rounded-full p-2" href="https://www.instagram.com/rafusoft"><i class="fa-brands fa-instagram text-white scale-100  rounded-full"></i></a>
-          <a className="bg-[#7e7a7a]  h-10 w-10 flex justify-center items-center rounded-full p-2" href="https://www.youtube.com/rafusoft"><i class="fa-brands fa-youtube text-white scale-100  rounded-full"></i></a>
-          <a className="bg-[#7e7a7a]  h-10 w-10 flex justify-center items-center rounded-full p-2" href="https://www.linkedin.com/in/rafusoft/"><i class="fa-brands fa-linkedin-in text-white scale-100  rounded-full"></i></a>
+          <a className="bg-[#7e7a7a] text-white h-10 w-10 flex justify-center items-center rounded-full p-2" href="https://www.facebook.com/rafusoft"><FacebookIcon className='scale-75'/></a>
+          <a className="bg-[#7e7a7a] text-white h-10 w-10 flex justify-center items-center rounded-full p-2" href="https://twitter.com/rafusoft"><XIcon className='scale-75'/></a>
+          <a className="bg-[#7e7a7a] text-white h-10 w-10 flex justify-center items-center rounded-full p-2" href="https://www.instagram.com/rafusoft"><InstagramIcon className='scale-75'/></a>
+          <a className="bg-[#7e7a7a] text-white h-10 w-10 flex justify-center items-center rounded-full p-2" href="https://www.youtube.com/rafusoft"><YouTubeIcon className='scale-75'/></a>
+          <a className="bg-[#7e7a7a] text-white h-10 w-10 flex justify-center items-center rounded-full p-2" href="https://www.linkedin.com/in/rafusoft/"><LinkedInIcon className='scale-75'/></a>
         </div>
 
         <p className="text-center my-4 text-white ">Top Most Software Company in Bangladesh</p>
@@ -19,8 +24,8 @@ export default function Footer(){
          <a href="https://g.page/r/CV46CyoD9xEVEB0/review"><Image src={rafusoftreview} alt="" /></a>
         </div>
 
-        <div class="facebook-like-button text-center mb-2 flex justify-center mt-10">
-          <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Frafusoft&width=174&layout=button_count&action=like&size=large&share=true&height=46&appId=951450788914496" width="174" height="30"  scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        <div className="facebook-like-button text-center mb-2 flex justify-center mt-10">
+          <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Frafusoft&width=174&layout=button_count&action=like&size=large&share=true&height=46&appId=951450788914496" width="174" height="30"  scrolling="no" frameBorder="0" allowFullScreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
         </div>
 
         <div className='flex justify-center text-sm gap-2 mt-5'>

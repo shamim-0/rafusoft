@@ -21,9 +21,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* font asowome */}
-        <script src="https://kit.fontawesome.com/90623e284f.js" crossOrigin="anonymous"></script>
-        {/* google font  */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="stylesheet" href="https://rafusoft.com/assets/frontend/css/style.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='true' />

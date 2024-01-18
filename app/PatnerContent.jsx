@@ -26,7 +26,7 @@ export default class PatnerContent extends Component {
       slidesToScroll: 1
     };
     return (
-      <div className="max-w-6xl mx-auto px-5">
+      <div className="max-w-6xl mx-auto">
         <Slider {...settings}>
           <div>
             <a href="https://rafusoft.com/"><Image className="w-24" src={rbytes} alt="rbytes" /></a>

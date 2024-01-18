@@ -1,29 +1,10 @@
-import Image from 'next/image'
 import React from 'react'
-import rocket from '../public/img/rocket.png'
-import icon1 from '../public/img/icon1.png'
-import icon2 from '../public/img/icon2.png'
-import icon3 from '../public/img/icon3.png'
-import mobileapp from '../public/img/1.png'
-import mobileappicon from '../public/img/mobile-app-icon.png'
-import webdevelopmenticon from '../public/img/web-dev-icon.png'
-import webdevelopment from '../public/img/2.png'
-import Service from '../public/img/Company-Service-Features.jpg'
-import graphicicon from '../public/img/graphics-design-icon.png'
-import graphic from '../public/img/3.png'
-import offshore from '../public/img/offshore-icon.png'
-import GATHER from '../public/img/GATHER-SPECS-icon.png'
 import PatnerContent from './PatnerContent'
-
-
-import count1 from '../public/img/stats/counter-1.png'
-import count2 from '../public/img/stats/counter-2.png'
-import count3 from '../public/img/stats/counter-3.png'
-import count4 from '../public/img/stats/counter-4.png'
-import ideation from '../public/img/stats/ideation.png'
+import HandshakeIcon from '@mui/icons-material/Handshake';
 import Patner from './Pater'
 import ContactCommon from './ContactCommon'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function HomeContent() {
   return (
@@ -47,28 +28,28 @@ export default function HomeContent() {
             <p className='mt-5 text-[#212529]'>We not only focus on the quality and cost of our service but also advise the best solutions to meet customer&apos;s specific markets. Our incessant effort, improvement, and innovative ideas made our expert team the trusted software offshore center provider amongst our esteemed clients.</p>
 
             <div className='flex items-start gap-5 mt-5'>
-                <Image className='w-20' src={icon1} alt='icon 1 '></Image>
+                <Image  src="/img/icon1.png" width={50} height={50} alt='icon 1 '></Image>
                 <div>
                     <h3>Our Mission</h3>
                     <p>Realize all the ideas of customers using the latest technology, thereby helping them save time and costs, increase productivity to the highest level. We want to give customer the best outsourcing software development services.</p>
                 </div>
             </div>
             <div className='flex items-start gap-5 mt-5'>
-                <Image src={icon2} alt='icon 1 '></Image>
+            <Image  src="/img/icon2.png" width={50} height={50} alt='icon 1 '></Image>
                 <div>
                     <h3>Our Vision</h3>
                     <p>To be on top 10 software development companies in Asia in 2020. Providing excellent outsourcing software development services and perfect mobile apps development and web development.</p>
                 </div>
             </div>
             <div className='flex items-start gap-5 mt-5'>
-                <Image src={icon3} alt='icon 1 '></Image>
+            <Image src="/img/icon3.png" width={50} height={50} alt='icon 1 '></Image>
                 <div>
                     <h3>Our Core Values</h3>
                     <p>Honesty - Excellence - Experience - Cost efficiency - Support.</p>
                 </div>
             </div>
            </div>
-          <Image className='md:block hidden' src={rocket} alt='rocket project rafusoft'></Image>
+          <Image className='md:block hidden' src="/img/rocket.png" width={500} height={500} alt='rocket project rafusoft'></Image>
         </div>
 
         {/* ******************************************************************************************** */}
@@ -83,10 +64,10 @@ export default function HomeContent() {
             <section className='max-w-6xl mx-auto py-10 grid md:grid-cols-3 grid-cols-1 gap-10 p-5'>
                 <div>
                     <div className='mobile-app relative'>
-                        <Image src={mobileapp} className='h-[300px]' alt="Mobile App Development" />
+                        <Image src="/img/1.png" width={500} height={500} className='h-[300px]' alt="Mobile App Development" />
                         <div className='absolute w-full h-full top-0 bg-[#000000ba] flex justify-center items-center '>
                             <div className='text-center'>
-                            <Image className='mx-auto' src={mobileappicon} alt='Mobile App Development'></Image>
+                            <Image className='mx-auto' src="/img/mobile-app-icon.png" height={50} width={50} alt='Mobile App Development'></Image>
                                 <h2 className='uppercase  text-white font-bold mt-4'>Mobile App Development</h2>
                             </div>
                         </div>
@@ -100,10 +81,10 @@ export default function HomeContent() {
                         </div>
                     </div>
                     <div className='mobile-app relative mt-8'>
-                        <Image src={webdevelopment} className='h-[300px]' alt="Mobile App Development" />
+                        <Image src="/img/2.png" width={500} height={500} className='h-[300px]' alt="Mobile App Development" />
                         <div className='absolute w-full h-full top-0 bg-[#000000ba] flex justify-center items-center '>
                             <div className='text-center'>
-                            <Image className='mx-auto' src={webdevelopmenticon} alt='Mobile App Development'></Image>
+                            <Image className='mx-auto' src="/img/web-dev-icon.png" height={50} width={50} alt='Mobile App Development'></Image>
                                 <h2 className='uppercase  text-white font-bold mt-4'>Web Development</h2>
                             </div>
                         </div>
@@ -115,13 +96,13 @@ export default function HomeContent() {
                     </div>
                     
                 </div>
-                <Image src={Service} alt='Service and feature image'></Image>
+                <Image src="/img/Company-Service-Features.jpg" height={600} width={350} alt='Service and feature img'></Image>
                 <div>
                     <div className='mobile-app relative'>
-                        <Image src={graphic} className='h-[300px]' alt="Mobile App Development" />
+                        <Image src="/img/3.png" className='h-[300px]' height={500} width={50} alt="Mobile App Development" />
                         <div className='absolute w-full h-full top-0 bg-[#000000ba] flex justify-center items-center '>
                             <div className='text-center'>
-                            <Image className='mx-auto ' src={graphicicon} alt='Mobile App Development'></Image>
+                            <Image className='mx-auto ' src="/img/graphics-design-icon.png" width={50} height={50} alt='Mobile App Development'></Image>
                                 <h2 className='uppercase  text-white font-bold mt-4'>Graphic Design</h2>
                             </div>
                         </div>
@@ -132,10 +113,10 @@ export default function HomeContent() {
                         </div>
                     </div>
                     <div className='mobile-app relative mt-8'>
-                        <Image src={webdevelopment} className='h-[300px]' alt="Mobile App Development" />
+                        <Image src="/img/2.png" height={400} width={500} className='h-[300px]' alt="Mobile App Development" />
                         <div className='absolute w-full h-full top-0 bg-[#000000ba] flex justify-center items-center '>
                             <div className='text-center'>
-                            <Image className='mx-auto' src={offshore} alt='Mobile App Development'></Image>
+                            <Image className='mx-auto' src="/img/offshore-icon.png" height={50} width={50} alt='Mobile App Development'></Image>
                                 <h2 className='uppercase  text-white font-bold mt-4'>Offshore Development</h2>
                             </div>
                         </div>
@@ -166,7 +147,7 @@ export default function HomeContent() {
             <div className='max-w-6xl mx-auto grid md:grid-cols-3 grid-cols-1 gap-10 mt-10 p-5' >
                 <div className='p-10 border-mini rounded'>
                     <div className='flex justify-center py-5'>
-                        <Image src={GATHER} alt=''></Image>
+                        <Image src="/img/GATHER-SPECS-icon.png" width={50} height={50} alt='/img/GATHER-SPECS-icon.png'></Image>
                     </div>
                     <div>
                         <h4 className='text-white font-medium text-xl'>GATHER SPECS</h4>
@@ -178,7 +159,7 @@ export default function HomeContent() {
                 </div>
                 <div className='p-10 border-mini rounded'>
                     <div className='flex justify-center py-5'>
-                        <Image src={GATHER} alt=''></Image>
+                    <Image src="/img/GATHER-SPECS-icon.png" width={50} height={50} alt='/img/GATHER-SPECS-icon.png'></Image>
                     </div>
                     <div>
                         <h4 className='text-white font-medium text-xl'>GATHER SPECS</h4>
@@ -190,7 +171,7 @@ export default function HomeContent() {
                 </div>
                 <div className='p-10 border-mini  rounded'>
                     <div className='flex justify-center py-5'>
-                        <Image src={GATHER} alt=''></Image>
+                    <Image src="/img/GATHER-SPECS-icon.png" width={50} height={50} alt='/img/GATHER-SPECS-icon.png'></Image>
                     </div>
                     <div>
                         <h4 className='text-white font-medium text-xl'>GATHER SPECS</h4>
@@ -212,33 +193,33 @@ export default function HomeContent() {
 
         <section className='my-28'>
             <h2 className='text-center font-medium text-3xl '>BEST STATS & CASE STUDIES</h2>
-            <h2 className='text-center mt-4 font-medium'>Here's our valuable customers trusted us.</h2>
+            <h2 className='text-center mt-4 font-medium'>Here&apos;s our valuable customers trusted us.</h2>
 
 
             <div className='max-w-6xl mx-auto grid md:grid-cols-4 gap-10 grid-cols-1 mt-16'>
                 <div className='flex items-center gap-5'>
-                    <Image src={count1} alt="Count 1" />
+                    <Image src="/img/stats/counter-1.png" height={50} width={50} alt="Count 1" />
                     <div>
                         <h5 className='text-4xl font-medium'>150 +</h5>
                         <p className='text-xl '>Web Development</p>
                     </div>
                 </div>
                 <div className='flex items-center gap-5'>
-                    <Image src={count2} alt="Count 1" />
+                <Image src="/img/stats/counter-2.png" height={50} width={50} alt="Count 1" />
                     <div>
                         <h5 className='text-4xl font-medium'>50 +</h5>
                         <p className='text-xl '> App Development</p>
                     </div>
                 </div>
                 <div className='flex items-center gap-5'>
-                    <Image src={count3} alt="Count 1" />
+                <Image src="/img/stats/counter-3.png" height={50} width={50} alt="Count 1" />
                     <div>
                         <h5 className='text-4xl font-medium'>100 +</h5>
                         <p className='text-xl '>Customers</p>
                     </div>
                 </div>
                 <div className='flex items-center gap-5'>
-                    <Image src={count4} alt="Count 1" />
+                <Image src="/img/stats/counter-4.png" height={50} width={50} alt="Count 1" />
                     <div>
                         <h5 className='text-4xl font-medium'>100 %</h5>
                         <p className='text-xl '>Satisfaction</p>
@@ -249,32 +230,32 @@ export default function HomeContent() {
 
 
         <section className='quote-bg py-20 mt-20'>
-            <h3  className='text-5xl font-bold text-white text-center mx-auto leading-8'><i class="fa-solid fa-quote-left scale-150  text-[#FF9800]"></i> We Believe : Technology Brings Transformative <br /> <br /> Changes to Business  <i class="fa-solid fa-quote-right scale-150  text-[#FF9800]"></i></h3>
+            <h3  className='text-5xl font-bold text-white text-center mx-auto leading-8'><i className="fa-solid fa-quote-left scale-150  text-[#FF9800]"></i> We Believe : Technology Brings Transformative <br /> <br /> Changes to Business  <i className="fa-solid fa-quote-right scale-150  text-[#FF9800]"></i></h3>
 
             <div className='max-w-6xl mx-auto mt-10 grid md:grid-cols-4 grid-cols-1 gap-5 '>
                 <div className='bg-[#444444] p-10 text-center'>
-                <i class="fa fa-handshake-o scale-[3] font-extrabold text-white " ></i>
+                <HandshakeIcon className="text-white font-bold" ></HandshakeIcon>
                 <div className='text-center shadow-xl py-3 text-xl text-white font-medium mt-4'>
                     27 +
                 </div>
                     <p className='text-xl text-white mt-4'>Years of Trust</p>
                 </div>
                 <div className='bg-[#444444] p-10 text-center'>
-                <i class="fa fa-tasks scale-[3] font-extrabold text-white " ></i>
+                <i className="fa fa-tasks scale-[3] font-extrabold text-white " ></i>
                 <div className='text-center shadow-xl py-3 text-xl text-white font-medium mt-4'>
                     950 +
                 </div>
                     <p className='text-xl text-white mt-4'>Projects</p>
                 </div>
                 <div className='bg-[#444444] p-10 text-center'>
-                <i class="fa fa-user-o scale-[3] font-extrabold text-white " ></i>
+                <i className="fa fa-user-o scale-[3] font-extrabold text-white " ></i>
                 <div className='text-center shadow-xl py-3 text-xl text-white font-medium mt-4'>
                     3.5k +
                 </div>
                     <p className='text-xl text-white mt-4'>Subscriber</p>
                 </div>
                 <div className='bg-[#444444] p-10 text-center'>
-                <i class="fa fa-smile-o scale-[3] font-extrabold text-white " ></i>
+                <i className="fa fa-smile-o scale-[3] font-extrabold text-white " ></i>
                 <div className='text-center shadow-xl py-3 text-xl text-white font-medium mt-4'>
                    300 +
                 </div>
@@ -287,10 +268,10 @@ export default function HomeContent() {
         {/* Concept */}
         <div className='mt-20'>
             <h3 className='text-center text-4xl font-medium mt-5'>From Idea to Proof of Concept</h3>
-            <p className='mt-3 text-center text-xl'>It takes more than a team to realise a game changing idea, it's domain expertise and that's what we possess.</p>
+            <p className='mt-3 text-center text-xl'>It takes more than a team to realise a game changing idea, it&apos;s domain expertise and that&apos;s what we possess.</p>
 
             <div className='flex justify-center mt-16'>
-            <Image src={ideation} alt="ideation" />
+            <Image src="/img/stats/ideation.png" width={1000} height={800} alt="ideation" />
             </div>
         </div>
 

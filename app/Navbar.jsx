@@ -1,14 +1,14 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
-import belgium from '../public/img/belgium.svg'
-import vietnam from '../public/img/vietnam.svg'
-import portugal from '../public/img/portugal.svg'
-import whatsapp from '../public/img/whatsapp2.png'
-import bangladesh from '../public/img/bangladesh.svg'
-import logo from '../public/img/rafusoft-logo.svg'
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { useState } from 'react'
 import Link from 'next/link'
+import FacebookIcon from '@mui/icons-material/Facebook';
+import XIcon from '@mui/icons-material/X';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 
 export default function Navbar() {
@@ -18,44 +18,69 @@ export default function Navbar() {
 
   return (
     <nav >
-    <div className="bg-[#27272893] p-4 hidden md:block">
+    <div className="bg-[#272728ed] p-4 hidden md:block">
       <div className='max-w-6xl mx-auto flex justify-between items-center'>
         <ul className='flex gap-5'>
-          <a href="" className='text-white'><i className="fa-brands scale-90 fa-facebook"></i></a>
-          <a href="" className='text-white'><i className="fa-brands scale-90 fa-x-twitter"></i></a>
-          <a href="" className='text-white'><i className="fa-brands scale-90 fa-instagram"></i></a>
-          <a href="" className='text-white'><i className="fa-brands scale-90 fa-youtube"></i></a>
-          <a href="" className='text-white'><i className="fa-brands scale-90 fa-linkedin-in"></i></a>
+          <a href="" className='text-white hover:text-white'><FacebookIcon className='scale-75'/></a>
+          <a href="" className='text-white hover:text-white'><XIcon className='scale-75'/></a>
+          <a href="" className='text-white hover:text-white'><InstagramIcon className='scale-75'/></a>
+          <a href="" className='text-white hover:text-white'><YouTubeIcon className='scale-75'/></a>
+          <a href="" className='text-white hover:text-white'><LinkedInIcon className='scale-75'/></a>
         </ul>
         <div className='flex items-center gap-5'>
           <a href="mailto:info@rafusofty.com" className='text-white hover:text-[#F15A29] text-[13px]' ><i class="fa-solid fa-envelope scale-95  text-[#F15A29]"></i> info@rafusoft.com</a>
-          <a href="" className='text-white text-[13px] flex  items-center gap-2 hover:text-[#F15A29]'><Image className='w-5' src={belgium} alt="Belgium" /> <p className='pl-2'>+32498464176</p></a>
-          <a href="" className='text-white text-[13px] flex  items-center gap-2 hover:text-[#F15A29]'><Image className='w-5' src={vietnam} alt="Belgium" /> <p className='pl-2'>+84385402004</p></a>
-          <a href="" className='text-white text-[13px] flex  items-center gap-2 hover:text-[#F15A29]'><Image className='w-5' src={portugal} alt="Belgium" /> <p className='pl-2'>+351920330982</p></a>
-          <a href="" className='text-white text-[13px] flex  items-center gap-2 hover:text-[#F15A29]'><Image className='h-4 w-4' src={whatsapp} alt="Belgium" /> <p className='pl-2'>+8801712552009</p></a>
+          <a href="" className='text-white text-[13px] flex  items-center gap-2 hover:text-[#F15A29]'><Image width={16} height={8} src="/img/belgium.svg" alt="Belgium" /> <p className='pl-2'>+32498464176</p></a>
+          <a href="" className='text-white text-[13px] flex  items-center gap-2 hover:text-[#F15A29]'><Image width={16} height={8} src="/img/vietnam.svg" alt="Belgium" /> <p className='pl-2'>+84385402004</p></a>
+          <a href="" className='text-white text-[13px] flex  items-center gap-2 hover:text-[#F15A29]'><Image width={16} height={8} src="/img/portugal.svg" alt="Belgium" /> <p className='pl-2'>+351920330982</p></a>
+          <a href="" className='text-white text-[13px] flex  items-center gap-2 hover:text-[#F15A29]'><Image width={16} height={8} src="/img/whatsappCopy.png" alt="Belgium" /> <p className='pl-2'>+8801712552009</p></a>
           <div className='relative'>
             <div href="" className='text-white text-[13px] flex  items-center gap-5]'>
-              <a href="" className='text-white text-[13px] hover:text-[#F15A29] flex  items-center gap-5]'><Image className='w-5' src={bangladesh} alt="Belgium" /> <p className='hover:text-[#F15A29] pl-2'> +8801744333888</p></a>
-              <button onClick={() => setOpen(!open)}> <i class="fa-solid fa-angle-down text-white cursor-pointer mx-2"></i></button>
+              <a href="" className='text-white text-[13px] hover:text-[#F15A29] flex  items-center gap-5]'><Image  width={16} height={8} src="/img/bangladesh.svg" alt="Belgium" /> <p className='hover:text-[#F15A29] pl-2'> +8801744333888</p></a>
+              <button className='text-white' onClick={() => setOpen(!open)}> <KeyboardArrowDownIcon class="text-white cursor-pointer mx-2"></KeyboardArrowDownIcon></button>
             </div>
-            <a href="" className={`${open ? "text-white text-[13px] flex  rounded-sm items-center absolute top-5 " : "hidden"}`}><Image className='w-5' src={bangladesh} alt="Belgium" /> <p className='pl-2'> +8801744333888</p></a>
+            <a href="" className={`${open ? "text-white text-[13px] flex  rounded-sm items-center absolute top-5 " : "hidden"}`}><Image  width={16} height={8} src="/img/bangladesh.svg" alt="Belgium" /> <p className='pl-2'> +8801744333888</p></a>
           </div>
         </div>
       </div>
     </div>
-    <main className='px-5 py-5 bg-[#27272800]'>
+    <main className='px-5 py-5 bg-[#000000c1]'>
       <div className='max-w-6xl mx-auto flex justify-between items-center'>
-       <Link href='/'> <Image src={logo} alt="rafusoft logo" /></Link>
+       <Link href='/'> <Image src="/img/rafusoft-logo.svg" width={150} height={70} alt="rafusoft logo" /></Link>
         <div className='md:flex  gap-5 hidden '>
 
+
+
+
           <div className='relative  li py-5'>
-            <Link className='text-white text-[15px] hover:text-[#F15A29]' href='/'> About Us <i class="fa-solid fa-chevron-down scale-75"></i></Link>
-            <ul className='absolute mt-3 bg-[#ffffff] w-72'>
-              <Link className='text-black text-[15px] py-2 hover:text-[#F15A29] w-full px-5 block' href='/'>Our Team</Link>
-              <Link className='text-black text-[15px] py-2 hover:text-[#F15A29] w-full px-5 block' href='/'>Apply For Job</Link>
-              <Link className='text-black text-[15px] py-2 hover:text-[#F15A29] w-full px-5 block' href='/'>IT Solution Dinajpur</Link>
-              <Link className='text-black text-[15px] py-2 hover:text-[#F15A29] w-full px-5 block' href='/'>CSR</Link>
-              <Link className='text-black text-[15px] py-2 hover:text-[#F15A29] w-full px-5 block' href='/'>Contact Us</Link>
+            <Link className='text-white text-[15px] hover:text-[#F15A29]' href='/'> About us <i class="fa-solid fa-chevron-down scale-75"></i></Link>
+            <ul className='absolute mt-3 bg-[#000000] w-72 h-48'>
+              <button className=' text-[15px] py-2 h-10 hover:text-[#fff]   fw-bold  w-full px-5 block'>
+                <div className='relative sub_main'>
+                <Link className='absolute top-2 left-3 text-white rounded hover:text-white z-50' href="/">Apply For Job</Link>
+                <div className='absolute h-10 w-full scale-0 top-0 rounded'></div>
+                </div>
+              </button>
+              <button className=' text-[15px] py-2 h-10 hover:text-[#fff]   fw-bold rounded w-full px-5 block'>
+                <div className='relative sub_main'>
+                <Link className='absolute top-2 left-3 text-white hover:text-white z-50' href="/">IT Solution Dinajpur</Link>
+                <div className='absolute h-10 w-full scale-0 top-0 rounded'></div>
+                </div>
+              </button>
+              <button className=' text-[15px] py-2 h-10 hover:text-[#fff]   fw-bold rounded w-full px-5 block'>
+                <div className='relative sub_main'>
+                <Link className='absolute top-2 left-3 text-white z-50 hover:text-white' href="/">CSR</Link>
+                <div className='absolute h-10 w-full scale-0 top-0 rounded'></div>
+                </div>
+              </button>
+              <button className=' text-[15px] py-2 h-10 hover:text-[#fff]   fw-bold rounded w-full px-5 block'>
+                <div className='relative sub_main'>
+                <Link className='absolute top-2 left-3 text-white z-50 hover:text-white' href="/">Contact Us</Link>
+                <div className='absolute h-10 w-full scale-0 top-0 rounded'></div>
+                </div>
+              </button>
+              {/* <Link className='text-black text-[15px] py-2 hover:text-[#fff] hover:bg-[#F15A29] fw-bold rounded w-full px-5 block' href='/'>IT Solution Dinajpur</Link>
+              <Link className='text-black text-[15px] py-2 hover:text-[#fff] hover:bg-[#F15A29] fw-bold rounded w-full px-5 block' href='/'>CSR</Link>
+              <Link className='text-black text-[15px] py-2 hover:text-[#fff] hover:bg-[#F15A29] fw-bold rounded w-full px-5 block' href='/'>Contact Us</Link> */}
             </ul>
           </div>
 
@@ -64,12 +89,12 @@ export default function Navbar() {
           <div className='relative  li py-5'>
             <Link className='text-white text-[15px] hover:text-[#F15A29]' href='/'> Services <i class="fa-solid fa-chevron-down scale-75"></i></Link>
             <ul className='absolute mt-3 bg-[#fcfcff] w-72'>
-              <Link className='text-black text-[15px] py-2   hover:text-[#F15A29] w-full px-5 block' href='/'>Mobile App Development</Link>
-              <Link className='text-black text-[15px] py-2   hover:text-[#F15A29] w-full px-5 block' href='/'>Software Develpment</Link>
-              <Link className='text-black text-[15px] py-2   hover:text-[#F15A29] w-full px-5 block' href='/'>Web Development</Link>
-              <Link className='text-black text-[15px] py-2   hover:text-[#F15A29] w-full px-5 block' href='/'>Graphic Design</Link>
-              <Link className='text-black text-[15px] py-2   hover:text-[#F15A29] w-full px-5 block' href='/'>Offshore Development Center</Link>
-              <Link className='text-black text-[15px] py-2   hover:text-[#F15A29] w-full px-5 block' href='/'>Web Hosting</Link>
+              <Link className='text-black text-[15px] py-2 sub_link  w-full px-5 block' href='/'>Mobile App Development</Link>
+              <Link className='text-black text-[15px] py-2 sub_link  w-full px-5 block' href='/'>Software Develpment</Link>
+              <Link className='text-black text-[15px] py-2 sub_link  w-full px-5 block' href='/'>Web Development</Link>
+              <Link className='text-black text-[15px] py-2 sub_link  w-full px-5 block' href='/'>Graphic Design</Link>
+              <Link className='text-black text-[15px] py-2 sub_link  w-full px-5 block' href='/'>Offshore Development Center</Link>
+              <Link className='text-black text-[15px] py-2 sub_link  w-full px-5 block' href='/'>Web Hosting</Link>
             </ul>
           </div>
 
@@ -175,8 +200,6 @@ export default function Navbar() {
     </main>
     <div className='max-w-6xl mx-auto border-t border-[#3d3c3e]'>
     </div>
-
-
     <div className='hidden'>
     <div className='bg-white p-5'>
             <Link className='flex justify-between items-center hover:text-[#F15A29]'  href='/' onClick={()=>setAbout(!about)}> <p>About Us</p> <i class="fa-solid fa-plus"></i></Link>
@@ -189,7 +212,6 @@ export default function Navbar() {
             </div>
     </div>
     </div>
-
   </nav>
   )
 }
